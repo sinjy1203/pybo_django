@@ -192,5 +192,9 @@ LOGGING = {
             'level': 'INFO',
             'propagate': False,
         },
+        'pybo': {
+            'handlers': ['concole', 'file'],
+            'level': 'INFO',
+        },
     }
 }
