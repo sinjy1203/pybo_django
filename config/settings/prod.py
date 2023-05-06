@@ -1,6 +1,6 @@
 from .base import *
 
-ALLOWED_HOSTS = ['52.79.50.228']
+ALLOWED_HOSTS = ['52.79.50.228', 'jeongyeol.com']
 STATIC_ROOT = BASE_DIR / 'static/'
 STATICFILES_DIRS = []
 DEBUG = False
