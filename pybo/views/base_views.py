@@ -7,10 +7,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.db.models import Q
 import logging
-# logger = logging.getLogger('pybo')
+logger = logging.getLogger('pybo')
 
 def index(request):
-    # logger.info("INFO 레벨로 출력")
+    logger.info("INFO 레벨로 출력")
     page = request.GET.get('page', '1')
     kw = request.GET.get('kw', '')
     question_list = Question.objects.order_by('-create_date')
